@@ -1,21 +1,45 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-// import { Router } from "react-router";
 
-const Nav = () => {
+const Nav = ({ isScrollTop }) => {
     return (
-        <nav className="nav">
-            <ul>
-                {/* <Router> */}
-                <li className="nav-li"></li>
-                <li className="nav-li"><NavLink to="/">strona główna</NavLink></li>
-                <li className="nav-li"><NavLink to="/">klub</NavLink></li>
-                <li className="nav-li"><NavLink to="/">podcast</NavLink></li>
-                <li className="nav-li"><NavLink to="/">wydawnictwo</NavLink></li>
-                <li className="nav-li"><NavLink to="/">youtube</NavLink></li>
-                <li className="nav-li"><NavLink to="/">facebook</NavLink></li>
-                <li className="nav-li"><NavLink to="/">protestantyzm</NavLink></li>
-                {/* </Router> */}
+        <nav className={`nav ${isScrollTop ? "nav-transparent" : ""}`}>
+            <ul className="nav__ul">
+                <li className="nav__li">
+                    <NavLink className="nav__a" to="/">
+                        strona główna
+                    </NavLink>
+                </li>
+                <li className="nav__li">
+                    <NavLink className="nav__a" to="/">
+                        klub
+                    </NavLink>
+                </li>
+                <li className="nav__li">
+                    <NavLink className="nav__a" to="/">
+                        podcast
+                    </NavLink>
+                </li>
+                <li className="nav__li">
+                    <NavLink className="nav__a" to="/">
+                        wydawnictwo
+                    </NavLink>
+                </li>
+                <li className="nav__li">
+                    <NavLink className="nav__a" to="/">
+                        youtube
+                    </NavLink>
+                </li>
+                <li className="nav__li">
+                    <NavLink className="nav__a" to="/">
+                        facebook
+                    </NavLink>
+                </li>
+                <li className="nav__li">
+                    <NavLink className="nav__a" to="/">
+                        protestantyzm
+                    </NavLink>
+                </li>
             </ul>
         </nav>
     );

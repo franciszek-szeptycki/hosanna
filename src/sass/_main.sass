@@ -1,0 +1,24 @@
+.main
+
+    .article
+        display: grid
+        grid-template-columns: 300px 900px
+        grid-template-rows: auto auto
+        
+        height: 100px
+        margin: 0x auto
+
+        .article__title
+            grid-column-end: span 2 
+            @include center-flex
+            font-size: 2.5rem
+            text-transform: uppercase
+            margin: 30px
+
+        .article__question
+            background-color: yellow
+            height: 50vh
+
+        .article__content
+            background-color: red
+            height: 50vh
