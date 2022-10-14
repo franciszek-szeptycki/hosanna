@@ -1,4 +1,5 @@
 import React from "react";
+import HomeUl from "./HomeUl";
 const Home = () => {
     return (
         <div className="home article">
@@ -25,33 +26,21 @@ const Home = () => {
                     <h2 className="section__question">jak możemy pomóc?</h2>
                 </aside>
                 <div className="section__content-container">
-                    <ul className="section__ul">
-                        <li>
-                            <h3 className="section__li-title">
-                                biblia ,,hosannna"
-                            </h3>
-                            <p className="section__content">
-                                Nowoczesny przekład Szkoły Biblijnej. Jest on
-                                maksymalnie wierny, napisany współczesnym
-                                językiem, oparty na wiarygodnych rękopisach
-                                Nowego Testamentu, a przede wszystkim opatrzony
-                                szczegółowym, a mimo to łatwym do zrozumienia,
-                                komentarzem.
-                            </p>
-                        </li>
-                        <li>
-                            <h3 className="section__li-title">filmy</h3>
-                            <p className="section__content"></p>
-                        </li>
-                        <li>
-                            <h3 className="section__li-title">podcast</h3>
-                            <p className="section__content"></p>
-                        </li>
-                        <li>
-                            <h3 className="section__li-title">artykuły</h3>
-                            <p className="section__content"></p>
-                        </li>
-                    </ul>
+                    <h3 className="section__li-title">
+                        biblia ,,hosannna"
+                        <a href="">
+                            <i class="fa-solid fa-book-bible"></i>
+                        </a>
+                    </h3>
+                    <p className="section__content">
+                        Nowoczesny przekład Szkoły Biblijnej. Jest on
+                        maksymalnie wierny, napisany współczesnym językiem,
+                        oparty na wiarygodnych rękopisach Nowego Testamentu, a
+                        przede wszystkim opatrzony szczegółowym, a mimo to
+                        łatwym do zrozumienia, komentarzem.{" "}
+                    </p>
+                    <a className="bottom-link" href="#">Dowiedz się więcej... <i class="fa-solid fa-arrow-right"></i></a>
+                    <HomeUl/>
                 </div>
             </section>
         </div>

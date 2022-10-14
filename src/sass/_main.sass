@@ -1,3 +1,18 @@
+.fa-solid
+    margin-left: 10px
+    font-size: 1.2rem
+    cursor: pointer
+    transition: .2s
+
+    &:hover
+        color: purple
+        margin-left: 10px
+
+h3, h4, h5, a
+    position: relative
+    display: flex
+    align-items: center
+    
 .main
 
     .article        
@@ -12,23 +27,51 @@
             display: grid
             grid-template-columns: 300px 900px
             grid-template-rows: auto
+            margin-bottom: $main-sections-distance
 
             .section__question-container
                 padding: $main-sections-distance
                 
                 .section__question
                     font-size: 2rem
+                
 
 
             .section__content-container
                 padding: $main-sections-distance
 
+                .section__ul
+                    width: 100%
+                    display: flex
+                    justify-content: space-between
+
+                    .section__li
+                        margin-bottom: $main-sections-distance
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+
                 .section__content
                     font-size: 1.3rem
-                    margin-bottom: $main-sections-distance
+                    text-align: justify
+
+                .section__button
+                    margin: 10px auto 30px
+                    padding: 5px 8px
+                    border-radius: 50px
+                    border: solid black 2px
+                    background-color: transparent
+                    color: black
+                    transition: .2s
+                    font-weight: bold
+                    font-size: 1.2rem
+                    cursor: pointer
+
+                    &:hover
+                        color: white
+                        background-color: black 
+
             
             .section__li-title
                 font-size: 1.4rem
                 margin: 0px 0 5px
-
-
