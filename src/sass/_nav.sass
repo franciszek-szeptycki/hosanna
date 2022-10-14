@@ -17,7 +17,8 @@
         display: flex
 
         .nav__li
-            width: 100%
+            width: 150px
+            flex-grow: 1
 
             height: 90px
 
@@ -26,10 +27,44 @@
             .nav__a
                 @include center-flex
                 font-size: 1.1rem
+                // font-weight: bold
                 text-transform: uppercase
                 text-align: center
                 width: 100%
                 height: 100%
+                
+                .nav__arrow-up, .nav__arrow-down
+                    color: inherit
+                    font-size: .9rem
+        .li-expand
+            position: relative
+            .nav__submenu
+                background: red
+                width: inherit
+                top: 90px
+                height: 0px
+                position: fixed
+                z-index: -1
+                transition: .2s
+            &:hover .nav__submenu
+                height: 200px
+
+        .li-media
+            width: 50px
+            flex-grow: 0.5
+            .yt-icon
+                color: red
+            .fb-icon
+                color: blue
+            .yt-icon, .fb-icon
+                background-color: white
+                border-radius: 50%
+                width: 30px
+                height: 30px
+
+                @include center-flex
+            
+
 
 .nav-transparent
     background-color: transparent

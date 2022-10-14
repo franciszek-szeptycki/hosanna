@@ -5,7 +5,7 @@ import Header from "./layout/Header";
 import Nav from "./layout/Nav";
 import Footer from "./layout/Footer"
 
-import Home from "./layout/Home";
+import Home from "./pages/Home";
 
 const App = () => {
     // T O    R E D U X

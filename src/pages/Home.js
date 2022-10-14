@@ -39,7 +39,7 @@ const Home = () => {
                         przede wszystkim opatrzony szczegółowym, a mimo to
                         łatwym do zrozumienia, komentarzem.{" "}
                     </p>
-                    <a className="bottom-link tiny-elem" href="#">
+                    <a className="bottom-link tiny-elem" href="">
                         Dowiedz się więcej...{" "}
                         <i className="link-icon fa-solid fa-arrow-right"></i>
                     </a>
