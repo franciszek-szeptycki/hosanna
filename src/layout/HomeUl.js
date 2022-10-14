@@ -2,44 +2,54 @@ import React from "react";
 
 const HomeUl = () => {
     return (
-        <ul className="section__ul">
-            <li className="section__li">
-                <h3 className="section__li-title">
-                    filmy{" "}
-                    <a href="">
-                        <i class="fa-solid fa-film"></i>
-                    </a>
+        <ul className="ul-wrapped mid-elem">
+            <li className={`ul-wrapped__elem`}>
+                <h3 className="ul-wrapped__elem-title">
+                    filmy <i className="fa-solid fa-film"></i>
                 </h3>
                 <button className="section__button">YoutTube</button>
             </li>
-            <li className="section__li">
-                <h3 className="section__li-title">
-                    podcast{" "}
-                    <a href="">
-                        <i class="fa-solid fa-headphones-simple"></i>
-                    </a>
+
+            <li className={`ul-wrapped__elem`}>
+                <h3 className="ul-wrapped__elem-title">
+                    podcast <i className="fa-solid fa-headphones-simple"></i>
                 </h3>
                 <button className="section__button">
                     Posłuchaj biblijnego podcastu
                 </button>
             </li>
-            <li className="section__li">
-                <h3 className="section__li-title">
-                    artykuły{" "}
-                    <a href="">
-                        <i class="fa-solid fa-newspaper"></i>
-                    </a>
+
+            <li className={`ul-wrapped__elem`}>
+                <h3 className="ul-wrapped__elem-title">
+                    artykuły <i className="fa-solid fa-newspaper"></i>
                 </h3>
                 <button className="section__button">Poznaj Pismo Święte</button>
             </li>
-            <li className="section__li">
-                <h3 className="section__li-title">
-                    konsultacje{" "}
-                    <a href="">
-                        <i class="fa-solid fa-question"></i>
-                    </a>
+
+            <li className={`ul-wrapped__elem`}>
+                <h3 className="ul-wrapped__elem-title">
+                    konsultacje biblijne <i class="fa-solid fa-envelope"></i>
                 </h3>
                 <button className="section__button">Zapytaj nas</button>
+            </li>
+
+            <li className={`ul-wrapped__elem`}>
+                <h3 className="ul-wrapped__elem-title">
+                    kursy <i class="fa-solid fa-chalkboard-user"></i>
+                </h3>
+                <button className="section__button">Zapisz się</button>
+            </li>
+            <li className={`ul-wrapped__elem`}>
+                <h3 className="ul-wrapped__elem-title">
+                    spotkania klubu <i class="fa-solid fa-mug-saucer"></i>
+                </h3>
+                <button className="section__button">Dołącz do nas</button>
+            </li>
+            <li className={`ul-wrapped__elem`}>
+                <h3 className="ul-wrapped__elem-title">
+                    wydawnictwo <i class="fa-solid fa-book"></i>
+                </h3>
+                <button className="section__button">Obejrzyj ofertę</button>
             </li>
         </ul>
     );

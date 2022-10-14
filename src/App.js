@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import Header from "./layout/Header";
 import Nav from "./layout/Nav";
+import Footer from "./layout/Footer"
 
 import Home from "./layout/Home";
 
@@ -24,6 +25,7 @@ const App = () => {
                         <Route path="/" element={<Home />} />
                     </Routes>
                 </main>
+                <Footer/>
             </div>
         </Router>
     );
