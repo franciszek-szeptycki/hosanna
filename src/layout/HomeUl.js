@@ -10,7 +10,6 @@ const HomeUl = () => {
                         <i class="fa-solid fa-film"></i>
                     </a>
                 </h3>
-                <p className="section__content"></p>
                 <button className="section__button">YoutTube</button>
             </li>
             <li className="section__li">
@@ -20,7 +19,6 @@ const HomeUl = () => {
                         <i class="fa-solid fa-headphones-simple"></i>
                     </a>
                 </h3>
-                <p className="section__content"></p>
                 <button className="section__button">
                     Posłuchaj biblijnego podcastu
                 </button>
@@ -32,17 +30,15 @@ const HomeUl = () => {
                         <i class="fa-solid fa-newspaper"></i>
                     </a>
                 </h3>
-                <p className="section__content"></p>
                 <button className="section__button">Poznaj Pismo Święte</button>
             </li>
             <li className="section__li">
                 <h3 className="section__li-title">
                     konsultacje{" "}
                     <a href="">
-                    <i class="fa-solid fa-question"></i>
+                        <i class="fa-solid fa-question"></i>
                     </a>
                 </h3>
-                <p className="section__content"></p>
                 <button className="section__button">Zapytaj nas</button>
             </li>
         </ul>
