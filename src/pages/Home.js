@@ -69,7 +69,6 @@ const Home = () => {
                             >
                                 <button
                                     className="button-pdf"
-                                    // trailingIcon="picture_as_pdf"
                                     label="Resume"
                                 >
                                     Wyznanie wiary PDF{" "}

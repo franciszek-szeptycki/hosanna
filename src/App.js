@@ -6,6 +6,7 @@ import Nav from "./layout/Nav";
 import Footer from "./layout/Footer"
 
 import Home from "./pages/Home";
+import Error from "./pages/Error";
 
 const App = () => {
     // T O    R E D U X
@@ -22,7 +23,8 @@ const App = () => {
                 <Header />
                 <main className="main">
                     <Routes>
-                        <Route path="/" element={<Home />} />
+                        <Route path="*" element={<Home />} />
+                        <Route path="/error" element={<Error />} />
                     </Routes>
                 </main>
                 <Footer/>

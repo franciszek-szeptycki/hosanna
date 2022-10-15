@@ -27,7 +27,7 @@ const Nav = ({ isScrollTop }) => {
                     </NavLink>
                 </li>
                 <li className="nav__li">
-                    <NavLink className="nav__a" to="#">
+                    <NavLink className="nav__a" to="/error">
                         biblia hosanna
                     </NavLink>
                 </li>
@@ -38,24 +38,24 @@ const Nav = ({ isScrollTop }) => {
                     </NavLink>
                     <ul className="nav__submenu">
                         <li className="nav__submenu-li">
-                            <NavLink className="nav__a" id="wydawnictwo" to="#">
+                            <NavLink className="nav__a" id="wydawnictwo" to="/error">
                                 wydawnictwo
                             </NavLink>
                         </li>
                         <li className="nav__submenu-li">
-                            <NavLink className="nav__a" id="artykuły" to="#">
+                            <NavLink className="nav__a" id="artykuły" to="/error">
                                 artykuły
                             </NavLink>
                         </li>
                         <li className="nav__submenu-li">
-                            <NavLink className="nav__a" id="podcast" to="#">
+                            <NavLink className="nav__a" id="podcast" to="/error">
                                 podcast
                             </NavLink>
                         </li>
                     </ul>
                 </li>
                 <li className="nav__li">
-                    <NavLink className="nav__a" to="#">
+                    <NavLink className="nav__a" to="/error">
                         protestantyzm
                     </NavLink>
                 </li>
@@ -67,17 +67,17 @@ const Nav = ({ isScrollTop }) => {
                     </NavLink>
                     <ul className="nav__submenu">
                         <li className="nav__submenu-li">
-                            <NavLink className="nav__a" to="#">
+                            <NavLink className="nav__a" to="/error">
                                 spotkania klubu
                             </NavLink>
                         </li>
                         <li className="nav__submenu-li">
-                            <NavLink className="nav__a" to="#">
+                            <NavLink className="nav__a" to="/error">
                                 kursy
                             </NavLink>
                         </li>
                         <li className="nav__submenu-li">
-                            <NavLink className="nav__a" to="#">
+                            <NavLink className="nav__a" to="/error">
                                 konstultacje biblijne
                             </NavLink>
                         </li>
@@ -85,22 +85,24 @@ const Nav = ({ isScrollTop }) => {
                 </li>
 
                 <li className="nav__li li-media">
-                    <NavLink
+                    <a
                         className="nav__a"
                         target="_blank"
-                        to="https://www.youtube.com/c/j1213"
+                        href="https://www.youtube.com/c/j1213"
+                        rel="noopener noreferrer"
                     >
                         <i className="yt-icon fa-brands fa-youtube"></i>
-                    </NavLink>
+                    </a>
                 </li>
                 <li className="nav__li li-media">
-                    <NavLink
+                    <a
                         className="nav__a"
                         target="_blank"
-                        to="https://www.facebook.com/SBHosanna"
+                        href="https://www.facebook.com/SBHosanna"
+                        rel="noopener noreferrer"
                     >
                         <i className="fb-icon fa-brands fa-facebook"></i>
-                    </NavLink>
+                    </a>
                 </li>
             </ul>
         </nav>
