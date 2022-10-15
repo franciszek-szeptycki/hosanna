@@ -4,92 +4,140 @@
     right: 0
     width: 100%
     background-color: white
-    padding-right: 20px
 
     transition: 0.3s
-    
-    display: flex
-    justify-content: flex-end
-
-    
-    .nav__ul
-        width: 75%
-        display: flex
-
-        .nav__li
-            width: 150px
-            flex-grow: 1
-            height: 90px
-            @include center-flex
-
-            &:hover
-                background-color: whitesmoke            
-
-            .nav__a
-                @include center-flex
-                font-size: 1.1rem
-                // font-weight: bold
-                text-transform: uppercase
-                text-align: center
-                width: 100%
-                height: 100%
-                
-                .nav__arrow-up, .nav__arrow-down
-                    color: inherit
-                    font-size: .9rem
-        .li-expand
-
-            position: relative
-
-            .nav__submenu
-                transition: 0.3s
-                background-color: white
-                width: 360px
-                top: 90px
-                height: 0px
-                position: fixed
-                z-index: -1
-                transition: .2s
-                overflow: hidden
-
-                display: flex
-                flex-direction: column
-
-                .nav__submenu-li
-                    width: 100% 
-                    height: 90px
-                    
-                    &:hover
-                        background-color: rgba(0, 0, 0, 0.5)
-
-            &:hover .nav__submenu
-                height: 270px
-
-
-        .li-media
-            width: 50px
-            flex-grow: 0.5
-            .yt-icon
-                color: red
-            .fb-icon
-                color: blue
-            .yt-icon, .fb-icon
-                background-color: white
-                border-radius: 50%
-                width: 30px
-                height: 30px
-
-                @include center-flex
-            
-
 
 .nav-transparent
     background-color: transparent
-    .nav__a
-        color: white
+    .hamburger i
+        color: white !important
+    .nav__li
+        background-color: transparent !important
+        .nav__a
+            color: white
+        &:hover
+            background-color: $almost-transparent !important
+    .li-expand
+        .nav__submenu
+            background-color: $almost-transparent !important
+            .nav__submenu-li
+                &:hover
+                    background-color: $almost-transparent !important
 
-.nav__submenu
-    background-color: rgba(0, 0, 0, 0
+@media (max-width: 950px)
+    .nav
+        .hamburger 
+            i
+                float: right
+                padding: 30px
+                font-size: 1.3rem
+                color: gray
+                text-align: center
+                transition: .1s
+            .fa-xmark
+                padding: 30px 33px
+        
+        .nav__ul
+            position: fixed
+            top: 80px
+            display: flex
+            flex-direction: column
+            height: 0px
+            width: 100%
+            overflow: hidden
+            transition: .3s
+            background-color: white
 
-.li-transparent
-    
+            .nav__li
+                flex-grow: 1
+                display: flex
+                align-items: center
+                padding-left: 20px 
+                
+                .nav__a
+                    font-size: 1.3rem
+                    text-transform: uppercase
+            
+            .li-expand
+                .nav__submenu
+                    display: none
+    .nav.expand-menu
+        .nav__ul
+            height: 360px
+
+
+// @media (min-width: 951px)
+//     .nav    
+//     display: flex
+//     justify-content: flex-end
+//     padding-right: 20px
+
+//     .nav__ul
+//         width: 75%
+//         display: flex
+
+//         .nav__li
+//             width: 150px
+//             flex-grow: 1
+//             height: 90px
+//             @include center-flex
+//             transition: .1s
+
+//             &:hover
+//                 background-color: whitesmoke
+
+//             .nav__a
+//                 @include center-flex
+//                 font-size: 1.1rem
+//                 text-transform: uppercase
+//                 text-align: center
+//                 width: 100%
+//                 height: 100%
+                
+//                 .nav__arrow-up, .nav__arrow-down
+//                     color: inherit
+//                     font-size: .9rem
+//         .li-expand
+//             position: relative
+
+//             .nav__submenu
+//                 transition: .1s
+//                 background-color: white
+//                 width: 360px
+//                 top: 90px
+//                 height: 0px
+//                 position: fixed
+//                 z-index: -1
+//                 transition: .1s
+//                 overflow: hidden
+//                 background-color: whitesmoke
+
+//                 display: flex
+//                 flex-direction: column
+
+//                 .nav__submenu-li
+//                     width: 100% 
+//                     height: 90px
+//                     transition: .1s
+                    
+//                     &:hover
+//                         background-color: rgb(235, 235, 235)  
+
+//             &:hover .nav__submenu
+//                 height: 270px
+
+
+//             .li-media
+//                 width: 50px
+//                 flex-grow: 0.5
+//                 .yt-icon
+//                     color: red
+//                 .fb-icon
+//                     color: blue
+//                 .yt-icon, .fb-icon
+//                     background-color: white
+//                     border-radius: 50%
+//                     width: 30px
+//                     height: 30px
+
+//                     @include center-flex

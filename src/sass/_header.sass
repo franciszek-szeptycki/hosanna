@@ -3,19 +3,15 @@
     width: 100vw
 
     .bg-photo
-        background-position: center
         height: inherit
+
+@media (max-width: 950px)
+    .bg-photo
+        background-image: url("../assets/img/book_mob.webp")
         background-size: 100% auto
-
-@media (max-width: 1000px)
-
-    .header
-        .bg-photo
-            background-image: url("../assets/img/books_mob.webp")
-
-@media (min-width: 1001px)
-
-    .header
-        .bg-photo
-            background-image: url("../assets/img/book.webp")
-            background-position: top
+        background-position: center
+@media (min-width: 951px)
+    .bg-photo
+        background-image: url("../assets/img/book.webp")
+        background-size: 100% auto
+        background-position: top

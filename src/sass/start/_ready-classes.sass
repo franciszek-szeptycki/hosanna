@@ -1,65 +1,62 @@
-@mixin center-flex
-    display: flex
-    justify-content: center
-    align-items: center
-    
-.fa-solid
-    font-size: 1.2rem
-    padding: 10px 0 10px 5px
+@media (min-width: 951px)    
+    .fa-solid
+        font-size: 1.2rem
+        padding: 10px 0 10px 5px
 
-h3, h4, h5
-    position: relative
-    display: flex
-    align-items: center
-
-.bottom-link, .bottom-link, .button-pdf, .link-icon
-    font-size: 1.2rem
-    color: cadetblue
-    transition: .2s
-
-    &:hover, &:hover i
-        color: #0f3a63
-
-.button-pdf
-    border: none
-    background: none
-
-
-.tiny-elem
-    margin: 10px 0
-
-.small-elem
-    margin: 20px 0
-
-.mid-elem
-    margin: 35px 0
-
-.big-elem
-    margin: 50px 0
-
-.ul-wrapped
-    width: 100%
-    display: flex
-    flex-wrap: wrap
-
-    .ul-wrapped__elem
-        flex-basis: 33.3%
-
+    h3, h4, h5
+        position: relative
         display: flex
-        flex-direction: column
         align-items: center
-        padding: 5px 10px
 
-        .section__button
-            border-radius: 50px
-            border: solid black 2px
-            background-color: transparent
-            color: black
-            transition: .2s
-            font-size: 1.2rem
-            cursor: pointer
+    .bottom-link, .bottom-link, .button-pdf, .link-icon
+        font-size: 1.2rem
+        color: cadetblue
+        transition: .2s
+        cursor: pointer
+
+        &:hover, &:hover i
+            color: #0f3a63
+
+    .button-pdf
+        border: none
+        background: none
+
+
+    .tiny-elem
+        margin: 10px 0
+
+    .small-elem
+        margin: 20px 0
+
+    .mid-elem
+        margin: 35px 0
+
+    .big-elem
+        margin: 50px 0
+
+    .ul-wrapped
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+
+        .ul-wrapped__elem
+            flex-basis: 33.3%
+
+            display: flex
+            flex-direction: column
+            align-items: center
             padding: 5px 10px
 
-            &:hover
-                color: white
-                background-color: black 
+            .section__button
+                border-radius: 50px
+                border: solid black 2px
+                background-color: transparent
+                color: black
+                transition: .2s
+                font-size: 1.2rem
+                cursor: pointer
+                padding: 5px 10px
+
+                &:hover
+                    color: white
+                    background-color: black 

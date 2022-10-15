@@ -28,26 +28,26 @@ const HomeUl = () => {
 
             <li className={`ul-wrapped__elem`}>
                 <h3 className="ul-wrapped__elem-title">
-                    konsultacje biblijne <i class="fa-solid fa-envelope"></i>
+                    konsultacje biblijne <i className="fa-solid fa-envelope"></i>
                 </h3>
                 <button className="section__button">Zapytaj nas</button>
             </li>
 
             <li className={`ul-wrapped__elem`}>
                 <h3 className="ul-wrapped__elem-title">
-                    kursy <i class="fa-solid fa-chalkboard-user"></i>
+                    kursy <i className="fa-solid fa-chalkboard-user"></i>
                 </h3>
                 <button className="section__button">Zapisz się</button>
             </li>
             <li className={`ul-wrapped__elem`}>
                 <h3 className="ul-wrapped__elem-title">
-                    spotkania klubu <i class="fa-solid fa-mug-saucer"></i>
+                    spotkania klubu <i className="fa-solid fa-mug-saucer"></i>
                 </h3>
                 <button className="section__button">Dołącz do nas</button>
             </li>
             <li className={`ul-wrapped__elem`}>
                 <h3 className="ul-wrapped__elem-title">
-                    wydawnictwo <i class="fa-solid fa-book"></i>
+                    wydawnictwo <i className="fa-solid fa-book"></i>
                 </h3>
                 <button className="section__button">Obejrzyj ofertę</button>
             </li>
