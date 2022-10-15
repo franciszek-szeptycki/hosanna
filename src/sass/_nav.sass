@@ -45,7 +45,7 @@
             width: 100%
             overflow: hidden
             transition: .3s
-            background-color: whitesmoke !important
+            // background-color: whitesmoke !important
 
             .nav__li
                 background-color: white
@@ -66,6 +66,13 @@
                     background-color: whitesmoke
             
             .li-expand
+                i 
+                    transition: 0.2s
+                    padding: 10px 5px
+
+                &:hover i
+                    transform: rotate(-180deg)
+
                 ul
                     transition: .1s
                     height: 0px

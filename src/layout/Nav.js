@@ -22,12 +22,24 @@ const Nav = ({ isScrollTop }) => {
             </div>
             <ul className="nav__ul">
                 <li className="nav__li">
-                    <NavLink className="nav__a" to="/">
+                    <NavLink
+                        className="nav__a"
+                        to="/"
+                        onClick={() => {
+                            setBurgerClicked(false);
+                        }}
+                    >
                         strona główna
                     </NavLink>
                 </li>
                 <li className="nav__li">
-                    <NavLink className="nav__a" to="/error">
+                    <NavLink
+                        className="nav__a"
+                        to="/error"
+                        onClick={() => {
+                            setBurgerClicked(false);
+                        }}
+                    >
                         biblia hosanna
                     </NavLink>
                 </li>
@@ -38,24 +50,51 @@ const Nav = ({ isScrollTop }) => {
                     </NavLink>
                     <ul className="nav__submenu">
                         <li className="nav__submenu-li">
-                            <NavLink className="nav__a" id="wydawnictwo" to="/error">
+                            <NavLink
+                                className="nav__a"
+                                id="wydawnictwo"
+                                to="/error"
+                                onClick={() => {
+                                    setBurgerClicked(false);
+                                }}
+                            >
                                 wydawnictwo
                             </NavLink>
                         </li>
                         <li className="nav__submenu-li">
-                            <NavLink className="nav__a" id="artykuły" to="/error">
+                            <NavLink
+                                className="nav__a"
+                                id="artykuły"
+                                to="/error"
+                                onClick={() => {
+                                    setBurgerClicked(false);
+                                }}
+                            >
                                 artykuły
                             </NavLink>
                         </li>
                         <li className="nav__submenu-li">
-                            <NavLink className="nav__a" id="podcast" to="/error">
+                            <NavLink
+                                className="nav__a"
+                                id="podcast"
+                                to="/error"
+                                onClick={() => {
+                                    setBurgerClicked(false);
+                                }}
+                            >
                                 podcast
                             </NavLink>
                         </li>
                     </ul>
                 </li>
                 <li className="nav__li">
-                    <NavLink className="nav__a" to="/error">
+                    <NavLink
+                        className="nav__a"
+                        to="/error"
+                        onClick={() => {
+                            setBurgerClicked(false);
+                        }}
+                    >
                         protestantyzm
                     </NavLink>
                 </li>
@@ -67,17 +106,35 @@ const Nav = ({ isScrollTop }) => {
                     </NavLink>
                     <ul className="nav__submenu">
                         <li className="nav__submenu-li">
-                            <NavLink className="nav__a" to="/error">
+                            <NavLink
+                                className="nav__a"
+                                to="/error"
+                                onClick={() => {
+                                    setBurgerClicked(false);
+                                }}
+                            >
                                 spotkania klubu
                             </NavLink>
                         </li>
                         <li className="nav__submenu-li">
-                            <NavLink className="nav__a" to="/error">
+                            <NavLink
+                                className="nav__a"
+                                to="/error"
+                                onClick={() => {
+                                    setBurgerClicked(false);
+                                }}
+                            >
                                 kursy
                             </NavLink>
                         </li>
                         <li className="nav__submenu-li">
-                            <NavLink className="nav__a" to="/error">
+                            <NavLink
+                                className="nav__a"
+                                to="/error"
+                                onClick={() => {
+                                    setBurgerClicked(false);
+                                }}
+                            >
                                 konstultacje biblijne
                             </NavLink>
                         </li>
