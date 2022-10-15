@@ -38,17 +38,17 @@ const Nav = ({ isScrollTop }) => {
                     </NavLink>
                     <ul className="nav__submenu">
                         <li className="nav__submenu-li">
-                            <NavLink className="nav__a" to="#">
+                            <NavLink className="nav__a" id="wydawnictwo" to="#">
                                 wydawnictwo
                             </NavLink>
                         </li>
                         <li className="nav__submenu-li">
-                            <NavLink className="nav__a" to="#">
+                            <NavLink className="nav__a" id="artykuły" to="#">
                                 artykuły
                             </NavLink>
                         </li>
                         <li className="nav__submenu-li">
-                            <NavLink className="nav__a" to="#">
+                            <NavLink className="nav__a" id="podcast" to="#">
                                 podcast
                             </NavLink>
                         </li>

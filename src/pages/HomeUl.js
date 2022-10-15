@@ -51,6 +51,7 @@ const HomeUl = () => {
                 </h3>
                 <button className="section__button">Obejrzyj ofertę</button>
             </li>
+            <li className={`ul-wrapped__elem`}></li>
         </ul>
     );
 };

@@ -23,20 +23,19 @@
             .nav__submenu-li
                 &:hover
                     background-color: $almost-transparent !important
-
+                    
 @media (max-width: 950px)
     .nav
         .hamburger 
+            padding: 30px
+            float: right
+            @include center-flex
             i
-                float: right
-                padding: 30px
                 font-size: 1.3rem
                 color: gray
                 text-align: center
                 transition: .1s
-            .fa-xmark
-                padding: 30px 33px
-        
+                        
         .nav__ul
             position: fixed
             top: 80px
@@ -46,98 +45,115 @@
             width: 100%
             overflow: hidden
             transition: .3s
-            background-color: white
 
             .nav__li
-                flex-grow: 1
+                background-color: white
                 display: flex
-                align-items: center
+                flex-direction: column
+                justify-content: center
                 padding-left: 20px 
                 
                 .nav__a
                     font-size: 1.3rem
                     text-transform: uppercase
+                    min-height: 50px
+                    display: flex
+                    align-items: center
             
             .li-expand
-                .nav__submenu
-                    display: none
+                ul
+                    transition: .1s
+                    height: 0px
+                    overflow: hidden
+            
+                &:hover .nav__submenu
+                    height: 150px
+
+
+            .li-media
+                .yt-icon
+                    color: red
+                .fb-icon
+                    color: blue
+                .yt-icon, .fb-icon
+                    
     .nav.expand-menu
         .nav__ul
-            height: 360px
+            height: 100vh
 
 
-// @media (min-width: 951px)
-//     .nav    
-//     display: flex
-//     justify-content: flex-end
-//     padding-right: 20px
+@media (min-width: 951px)
+    .nav    
+    display: flex
+    justify-content: flex-end
+    padding-right: 20px
 
-//     .nav__ul
-//         width: 75%
-//         display: flex
+    .nav__ul
+        width: 75%
+        display: flex
 
-//         .nav__li
-//             width: 150px
-//             flex-grow: 1
-//             height: 90px
-//             @include center-flex
-//             transition: .1s
+        .nav__li
+            width: 150px
+            flex-grow: 1
+            height: 90px
+            @include center-flex
+            transition: .1s
 
-//             &:hover
-//                 background-color: whitesmoke
+            &:hover
+                background-color: whitesmoke
 
-//             .nav__a
-//                 @include center-flex
-//                 font-size: 1.1rem
-//                 text-transform: uppercase
-//                 text-align: center
-//                 width: 100%
-//                 height: 100%
+            .nav__a
+                @include center-flex
+                font-size: 1.1rem
+                text-transform: uppercase
+                text-align: center
+                width: 100%
+                height: 100%
                 
-//                 .nav__arrow-up, .nav__arrow-down
-//                     color: inherit
-//                     font-size: .9rem
-//         .li-expand
-//             position: relative
+                .nav__arrow-up, .nav__arrow-down
+                    color: inherit
+                    font-size: .9rem
+        .li-expand
+            position: relative
 
-//             .nav__submenu
-//                 transition: .1s
-//                 background-color: white
-//                 width: 360px
-//                 top: 90px
-//                 height: 0px
-//                 position: fixed
-//                 z-index: -1
-//                 transition: .1s
-//                 overflow: hidden
-//                 background-color: whitesmoke
+            .nav__submenu
+                transition: .1s
+                background-color: white
+                width: 360px
+                top: 90px
+                height: 0px
+                position: fixed
+                z-index: -1
+                transition: .1s
+                overflow: hidden
+                background-color: whitesmoke
 
-//                 display: flex
-//                 flex-direction: column
+                display: flex
+                flex-direction: column
 
-//                 .nav__submenu-li
-//                     width: 100% 
-//                     height: 90px
-//                     transition: .1s
+                .nav__submenu-li
+                    width: 100% 
+                    height: 90px
+                    transition: .1s
                     
-//                     &:hover
-//                         background-color: rgb(235, 235, 235)  
+                    &:hover
+                        background-color: rgb(235, 235, 235)  
 
-//             &:hover .nav__submenu
-//                 height: 270px
+            &:hover .nav__submenu
+                height: 270px
 
 
-//             .li-media
-//                 width: 50px
-//                 flex-grow: 0.5
-//                 .yt-icon
-//                     color: red
-//                 .fb-icon
-//                     color: blue
-//                 .yt-icon, .fb-icon
-//                     background-color: white
-//                     border-radius: 50%
-//                     width: 30px
-//                     height: 30px
+            .li-media
+                width: 50px
+                flex-grow: 0.5
+                .yt-icon
+                    color: red
+                .fb-icon
+                    color: blue
+                .yt-icon, .fb-icon
+                    background-color: white
+                    border-radius: 50%
+                    width: 30px
+                    height: 30px
 
-//                     @include center-flex
+                    @include center-flex
