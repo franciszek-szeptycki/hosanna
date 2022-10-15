@@ -2,6 +2,7 @@ import React from "react";
 import HomeUl from "./HomeUl";
 
 import Pdf from "../assets/pdf/zasady-wiary.pdf";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
     return (
@@ -39,10 +40,10 @@ const Home = () => {
                         przede wszystkim opatrzony szczegółowym, a mimo to
                         łatwym do zrozumienia, komentarzem.{" "}
                     </p>
-                    <a className="bottom-link tiny-elem" href="">
+                    <NavLink className="bottom-link tiny-elem" to="/error">
                         Dowiedz się więcej...{" "}
                         <i className="link-icon fa-solid fa-arrow-right"></i>
-                    </a>
+                    </NavLink>
                     <HomeUl />
                 </div>
             </section>
