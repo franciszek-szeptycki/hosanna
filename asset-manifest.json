@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/hosanna/static/css/main.975b34bf.css",
-    "main.js": "/hosanna/static/js/main.41629b87.js",
+    "main.js": "/hosanna/static/js/main.535287ee.js",
     "static/media/zasady-wiary.pdf": "/hosanna/static/media/zasady-wiary.000a6fbc077d5f2790ef.pdf",
     "static/media/book.webp": "/hosanna/static/media/book.cf270b0a7e047b9d3350.webp",
     "static/media/book_mob.webp": "/hosanna/static/media/book_mob.706b03c6007503b18513.webp",
     "index.html": "/hosanna/index.html",
     "main.975b34bf.css.map": "/hosanna/static/css/main.975b34bf.css.map",
-    "main.41629b87.js.map": "/hosanna/static/js/main.41629b87.js.map"
+    "main.535287ee.js.map": "/hosanna/static/js/main.535287ee.js.map"
   },
   "entrypoints": [
     "static/css/main.975b34bf.css",
-    "static/js/main.41629b87.js"
+    "static/js/main.535287ee.js"
   ]
 }
